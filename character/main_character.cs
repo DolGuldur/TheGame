@@ -4,6 +4,6 @@ namespace mainCharacter
 {
     class MainCharacter : Character
     {
-
+        
     }
 }
