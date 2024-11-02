@@ -1,8 +1,8 @@
-namespace location
+namespace Main.Location
 {
     abstract class Location
     {
-        static void EnterTheLocation();
+        public abstract void EnterTheLocation();
 
     }
 }

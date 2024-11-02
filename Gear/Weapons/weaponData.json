@@ -1,0 +1,235 @@
+{
+  "StartingWeapon": [
+    {
+      "name": "Rodzinny Sztylet",
+      "rarity": "zwykla",
+      "damage": 100,
+      "accessibility": 1,
+      "agilityBoost": 0,
+      "durability": 100,
+      "twoHanded": 0
+    }
+  ],
+  "Swords": [
+    {
+      "name": "Miecz Legionow",
+      "rarity": "zwykla",
+      "damage": 120,
+      "accessibility": 1,
+      "agilityBoost": 0,
+      "durability": 100,
+      "twoHanded": 0
+    },
+    {
+      "name": "Miecz Ucznia",
+      "rarity": "zwykla",
+      "damage": 170,
+      "accessibility": 1,
+      "agilityBoost": -1,
+      "durability": 110,
+      "twoHanded": 1
+    },
+    {
+      "name": "Wielki Miecz Dwureczny",
+      "rarity": "rzadka",
+      "damage": 200,
+      "accessibility": 1,
+      "agilityBoost": -2,
+      "durability": 150,
+      "twoHanded": 1
+    },
+    {
+      "name": "Czarny Miecz",
+      "rarity": "rzadka",
+      "damage": 140,
+      "accessibility": 1,
+      "agilityBoost": 1,
+      "durability": 150,
+      "twoHanded": 0
+    },
+    {
+      "name": "Wdowi Placz",
+      "rarity": "epicka",
+      "damage": 160,
+      "accessibility": 3,
+      "agilityBoost": 2,
+      "durability": 150,
+      "twoHanded": 0
+    },
+    {
+      "name": "Miecz Przeznaczenia",
+      "rarity": "epicka",
+      "damage": 240,
+      "accessibility": 2,
+      "agilityBoost": -1,
+      "durability": 230,
+      "twoHanded": 1
+    },
+    {
+      "name": "Glamdring",
+      "rarity": "legendarna",
+      "damage": 300,
+      "accessibility": 5,
+      "agilityBoost": 0,
+      "durability": 300,
+      "twoHanded": 1
+    },
+    {
+      "name": "Excalibur",
+      "rarity": "legendarna",
+      "damage": 230,
+      "accessibility": 6,
+      "agilityBoost": 2,
+      "durability": 230,
+      "twoHanded": 0
+    }
+  ],
+  "Axes": [
+    {
+      "name": "Topor Wojownika",
+      "rarity": "zwykla",
+      "damage": 140,
+      "accessibility": 1,
+      "agilityBoost": -1,
+      "durability": 130,
+      "twoHanded": 0
+    },
+    {
+      "name": "Cieka Siekiera",
+      "rarity": "zwykla",
+      "damage": 200,
+      "accessibility": 1,
+      "agilityBoost": -3,
+      "durability": 120,
+      "twoHanded": 1
+    },
+    {
+      "name": "Wielki Topor Bojowy",
+      "rarity": "rzadka",
+      "damage": 250,
+      "accessibility": 1,
+      "agilityBoost": -3,
+      "durability": 200,
+      "twoHanded": 1
+    },
+    {
+      "name": "Topor Berserkera",
+      "rarity": "rzadka",
+      "damage": 190,
+      "accessibility": 1,
+      "agilityBoost": -1,
+      "durability": 180,
+      "twoHanded": 1
+    },
+    {
+      "name": "Zwiastun Smierci",
+      "rarity": "epicka",
+      "damage": 320,
+      "accessibility": 4,
+      "agilityBoost": -3,
+      "durability": 250,
+      "twoHanded": 1
+    },
+    {
+      "name": "Ragnarok",
+      "rarity": "epicka",
+      "damage": 250,
+      "accessibility": 3,
+      "agilityBoost": -1,
+      "durability": 250,
+      "twoHanded": 1
+    },
+    {
+      "name": "Krol Wikingow",
+      "rarity": "legendarna",
+      "damage": 400,
+      "accessibility": 7,
+      "agilityBoost": -2,
+      "durability": 330,
+      "twoHanded": 1
+    },
+    {
+      "name": "Topor Boga Peruna",
+      "rarity": "legendarna",
+      "damage": 350,
+      "accessibility": 9,
+      "agilityBoost": -1,
+      "durability": 350,
+      "twoHanded": 1
+    }
+  ],
+  "Spears": [
+    {
+      "name": "Stalowa Wlocznia",
+      "rarity": "zwykla",
+      "damage": 130,
+      "accessibility": 1,
+      "agilityBoost": 0,
+      "durability": 90,
+      "twoHanded": 0
+    },
+    {
+      "name": "Wlocznia Zimnej Ziemi",
+      "rarity": "zwykla",
+      "damage": 100,
+      "accessibility": 1,
+      "agilityBoost": 1,
+      "durability": 100,
+      "twoHanded": 0
+    },
+    {
+      "name": "Przekleta Wlocznia",
+      "rarity": "rzadka",
+      "damage": 180,
+      "accessibility": 1,
+      "agilityBoost": -1,
+      "durability": 120,
+      "twoHanded": 0
+    },
+    {
+      "name": "Ostry Kiel",
+      "rarity": "rzadka",
+      "damage": 150,
+      "accessibility": 1,
+      "agilityBoost": 0,
+      "durability": 120,
+      "twoHanded": 0
+    },
+    {
+      "name": "Wlocznia Slonecznego Imperium",
+      "rarity": "epicka",
+      "damage": 200,
+      "accessibility": 4,
+      "agilityBoost": 0,
+      "durability": 130,
+      "twoHanded": 0
+    },
+    {
+      "name": "Trojzab Posejdona",
+      "rarity": "epicka",
+      "damage": 250,
+      "accessibility": 3,
+      "agilityBoost": -1,
+      "durability": 150,
+      "twoHanded": 0
+    },
+    {
+      "name": "Prawa Reka Achillesa",
+      "rarity": "legendarna",
+      "damage": 250,
+      "accessibility": 8,
+      "agilityBoost": 2,
+      "durability": 140,
+      "twoHanded": 0
+    },
+    {
+      "name": "Gungnir",
+      "rarity": "legendarna",
+      "damage": 270,
+      "accessibility": 6,
+      "agilityBoost": 1,
+      "durability": 160,
+      "twoHanded": 0
+    }
+  ]
+}
