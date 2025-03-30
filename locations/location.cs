@@ -1,4 +1,4 @@
-namespace Main.Location
+namespace Main.Locations
 {
     abstract class Location
     {

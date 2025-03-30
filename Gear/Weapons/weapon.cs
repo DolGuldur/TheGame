@@ -2,9 +2,8 @@ namespace Main.Gear.Weapon
 {
     abstract class Weapon
     {
-        public abstract int Accessibility { get; set; }
         private string _name;
-        private int _rarity;
+        private string _rarity;
         private int _damage;
         private int _level;
         private int _durability;
@@ -24,7 +23,7 @@ namespace Main.Gear.Weapon
             { ExcellenceTypes.Perfect, "Wyœmienity" },
         };
 
-        public Weapon(string name, int rarity, int damage, int level, int durability, bool twoHanded, int excelence)
+        public Weapon(string name, string rarity, int damage, int level, int durability, bool twoHanded)
         {
             _name = name;
             _rarity = rarity;
@@ -35,32 +34,6 @@ namespace Main.Gear.Weapon
             _twoHanded = twoHanded;
             _excellence = DrawExcellence();
         }
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        public int Rarity
-        {
-            get { return _rarity; }
-            set { _rarity = value; }
-        }
-
-        public int Damage
-        {
-            get { return _damage; }
-            set { _damage = value; }
-        }
-
-        public int Level
-        {
-            get { return _level; }
-            set { _level = value; }
-        }
-
-        public int Durability;
 
         public int DrawExcellence()
         {
@@ -78,5 +51,36 @@ namespace Main.Gear.Weapon
             Good,
             Perfect
         }
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public string Rarity
+        {
+            get { return _rarity; }
+            set { _rarity = value; }
+        }
+
+        public int Damage
+        {
+            get { return _damage; }
+            set { _damage = value; }
+        }
+
+        public int Level
+        {
+            get { return _level; }
+            set { _level = value; }
+        }
+
+        public int Durability 
+        {
+            get { return _durability; }
+            set { _durability = value; }
+        }
+
     }
 }

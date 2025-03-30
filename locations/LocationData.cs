@@ -1,4 +1,4 @@
-namespace Main.PillagedLocationData
+namespace Main.Locations
 {
 	class PillagedLocationData
 	{ 

@@ -1,10 +1,10 @@
-using Main.Location;
+using Main.Locations;
 
-namespace StartLocation
+namespace Main.Locations
 {
     class StartLocation : Location
     {
-        public override void EnterTheLocation()
+        public static override void EnterTheLocation()
         {
             throw new NotImplementedException();
         }

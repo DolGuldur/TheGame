@@ -1,5 +1,5 @@
 using Main.Engine;
-        
+
 namespace Main
 {
     class TheGame
@@ -7,14 +7,8 @@ namespace Main
         static void Main(string[] args)
         {
             Console.WriteLine("Tu kiedys bedzie gra");
-            StartTheGame();
-        }
-
-        static void StartTheGame(bool test = false)
-        {
-            //TODO: UI prepare game window
-            MenuContext menuContext = new MenuContext();
-            menuContext.RunMenu();
+            MainEngine mainEngine = new MainEngine();
+            mainEngine.Run();
         }
     }
 }

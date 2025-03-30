@@ -2,16 +2,12 @@
 
 namespace Main.Gear.Weapon
 {
-    internal class Sword : Weapon
+    class Sword : Weapon
     {
-        private const int AccessibilityConst = 1;
-
-        private int _accessibility;
-
-        public override int Accessibility
+        public Sword(string name, string rarity, int damage, int level, int durability, bool twoHanded)
+            : base(name, rarity, damage, level, durability, twoHanded)
         {
-            get { return _accessibility; }
-            set { _accessibility = AccessibilityConst; }
+            ;
         }
     }
 }

@@ -1,6 +1,6 @@
-using Main.Location;
+using Main.Locations;
 
-namespace pillagedVillage
+namespace Main.Locations
 {
 	class pillagedVillage : Location
 	{
