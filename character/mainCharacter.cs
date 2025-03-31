@@ -1,10 +1,10 @@
 using Main.Character;
 using Main.Gear.Weapon;
 using Main.Items;
+using Main.Gear.Armor;
 using System.Text.Json;
 using Main.Gear.WeaponSerializer;
 using System.Reflection.Metadata.Ecma335;
-using Main.character;
 
 namespace Main.Character
 {
@@ -15,16 +15,19 @@ namespace Main.Character
         private WeaponMasteryStats _weaponMasteryStats;
         private Weapon _usedWeapon;
         private List<Weapon> _storedWeapons;
+        private List<Armor> _usedArmor;
         private int _gold;
         private int _experience;
 
         public MainCharacter(string name, int level, CharacterStats stats, int gold,
             int experience, Bagpack bagpack, WeaponMasteryStats weaponMasteryStats,
-            Weapon usedWeapon, List<Weapon> storedWeapons) : base(name, level, stats)
+            Weapon usedWeapon, List<Weapon> storedWeapons, List<Armor> usedArmor) 
+            : base(name, level, stats)
         {
             _weaponMasteryStats = weaponMasteryStats;
             _bagpack = bagpack;
-            _storedWeapons = new List<Weapon>();
+            _storedWeapons = storedWeapons;
+            _usedArmor = usedArmor;
             UsedWeapon = usedWeapon;
             Gold = gold;
             _experience = experience;

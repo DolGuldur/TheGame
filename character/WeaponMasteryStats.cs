@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Main.character
+namespace Main.Character
 {
     internal class WeaponMasteryStats
     {
