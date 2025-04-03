@@ -10,19 +10,21 @@ namespace Main.Character
 {
     class MainCharacter : Character
     {
-        //NOTE: use enum instead string? Do separate class?
         private Bagpack _bagpack;
         private WeaponMasteryStats _weaponMasteryStats;
         private Weapon _usedWeapon;
+        //array instead of List? may be easier for choosing weapons, and will always have only
+        //3 slots
         private List<Weapon> _storedWeapons;
-        private List<Armor> _usedArmor;
+        public List<Armor> _usedArmor; //Private but some functions to get this list?
+        //maybe a class, but what with situation, when you dont have this part of armor?
+        //maybe private, but with funtions to change it? Property?
         private int _gold;
         private int _experience;
 
-        public MainCharacter(string name, int level, CharacterStats stats, int gold,
-            int experience, Bagpack bagpack, WeaponMasteryStats weaponMasteryStats,
-            Weapon usedWeapon, List<Weapon> storedWeapons, List<Armor> usedArmor) 
-            : base(name, level, stats)
+        public MainCharacter(string name, int level, CharacterStats stats, int gold, int experience, 
+            Bagpack bagpack, WeaponMasteryStats weaponMasteryStats, Weapon usedWeapon, 
+            List<Weapon> storedWeapons, List<Armor> usedArmor) : base(name, level, stats)
         {
             _weaponMasteryStats = weaponMasteryStats;
             _bagpack = bagpack;
@@ -31,6 +33,70 @@ namespace Main.Character
             UsedWeapon = usedWeapon;
             Gold = gold;
             _experience = experience;
+        }
+
+        public bool Heal(int healthAmount)
+        {
+            if (_currentStats.Health == _stats.Health)
+            {
+                Console.WriteLine("Twoje ¿ycie jest pe³ne");
+                return false;
+            }
+            else
+            {
+                _currentStats.Health += healthAmount;
+                if (_currentStats.Health > _stats.Health) 
+                { 
+                    _currentStats.Health = _stats.Health; 
+                }
+                return true;
+            }
+        }
+
+        public bool RestoreFullHealth()
+        {
+            if (_currentStats.Health == _stats.Health)
+            {
+                Console.WriteLine("Twoje ¿ycie jest ju¿ pe³ne");
+                return false;
+            }
+            else
+            {
+                _currentStats.Health = _stats.Health;
+                return true;
+            }
+        }
+
+        public bool RestoreStamina(int staminaAmount)
+        {
+            if (_currentStats.Stamina == _stats.Stamina)
+            {
+                Console.WriteLine("Twoja wytrzyma³oœæ jest pe³na");
+                return false;
+            }
+            else
+            {
+                _currentStats.Stamina += staminaAmount;
+                if (_currentStats.Stamina > _stats.Stamina)
+                {
+                    _currentStats.Stamina = _stats.Stamina;
+                }
+                return true;
+            }
+        }
+
+        public bool RestoreFullStamina()
+        {
+            if (_currentStats.Stamina == _stats.Stamina)
+            {
+                Console.WriteLine("Twoja wytrzyma³oœæ jest ju¿ pe³na");
+                return false;
+            }
+            else
+            {
+                _currentStats.Stamina = _stats.Stamina;
+                return true;
+            }
         }
 
         public int Gold

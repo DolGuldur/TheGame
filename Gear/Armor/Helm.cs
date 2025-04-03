@@ -9,7 +9,9 @@ namespace Main.Gear.Armor
     internal class Helm : Armor
     {
         private const string TypeConst = "Hełm";
-        private const int AccessConst = 3;
+        //I know public const is allocated to private Accessibility, but is needed for armory
+        //Might change later
+        public const int AccessConst = 3;
         private const int DurabilityConst = 60; //arbitrary TODO: balance
         private const int CostConst = 120; //TODO: balance
 
@@ -17,15 +19,20 @@ namespace Main.Gear.Armor
         {
             Type = TypeConst;
             Accessibility = AccessConst;
-            Cost = CostConst;
-            UpdateMaxDurability();
+            Cost = UpdateCost();
+            MaxDurability = UpdateMaxDurability();
             Durability = MaxDurability;
         }
 
-        public override void UpdateMaxDurability()
+        public override int UpdateMaxDurability()
         {
             //TODO: balance
-            MaxDurability = DurabilityConst + (int)(DurabilityConst * (this.Level / 10));
+            return DurabilityConst + (int)(DurabilityConst * (this.Level / 10));
+        }
+
+        public override int UpdateCost()
+        {
+            return CostConst + (int)(CostConst * (this.Level / 5)); //TODO: balance
         }
     }
 }

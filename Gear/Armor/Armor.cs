@@ -26,6 +26,8 @@ namespace Main.Gear.Armor
         {
             Level++;
             UpdateMaxDurability();
+            UpdateCost();
+            Durability = GetMaxDurability();
         }
 
         public void RepairArmor() //Bool?
@@ -50,20 +52,41 @@ namespace Main.Gear.Armor
             }
         }
 
-        public abstract void UpdateMaxDurability(); //bool?
+        //updates maxDurability according to level
+        public abstract int UpdateMaxDurability(); //bool?
 
+        //updates Cost according to level
+        public abstract int UpdateCost();
+
+        //Returns Type of armor
         public string GetArmorType() { return Type; }
 
+        //returns accessibility - may be useless, because of accesConst being public - access need
+        //to be accessible to get without creation of object - static? but will need to be moved to 
+        //lower classes - need to reconsider it
         public int GetAccessibility() { return Accessibility; }
 
+        //returns cost of armor according to level
         public int GetCost() { return Cost; }
 
+        //returns MaxDurability according to level
         public int GetMaxDurability() { return MaxDurability; }
 
-        public int GetUpdateCost()
+        //returns cost of upgreading armor to next level. At the begining, I thought, that this
+        //Upgrade should be changed according to CostConst in order to avoid exponencial growth of
+        //cost. But it might be better with this need to do balance - might change it later
+        public int GetUpgradeCost()
         {
             int updateCost = (int)(Cost * (this.Level / 10)); //balance
             return updateCost;
+        }
+
+        public int GetRepairCost()
+        {
+            // arbitrary mechanics - needed balance
+            int multiplier = (int)(Cost * (this.Level / 10));
+            int repairCost = (int)((MaxDurability - Durability) * multiplier);
+            return repairCost;
         }
 
         protected string Type

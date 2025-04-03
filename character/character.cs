@@ -7,8 +7,8 @@ namespace Main.Character
     {
         private string _name;
         private int _level;
-        private CharacterStats _stats;
-        private CharacterStats _currentStats;
+        protected CharacterStats _stats;
+        protected CharacterStats _currentStats;
 
         public Character(string name, int level, CharacterStats stats)
         {

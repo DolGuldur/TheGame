@@ -5,7 +5,7 @@ namespace Main.Engine
     internal class MenuContext
     {
         //NOTE: rethink?
-        private const string InfoText = "Wybierz Opcję";
+        private const string InfoText = "Wybierz Opcję:";
         private const string WrongOptionText = "Wybrano niewspieraną opcję, wybierz ponownie";
         private const string NotIplementedError = "Opcja nie została zaiplementowana";
 
