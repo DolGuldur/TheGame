@@ -10,6 +10,7 @@ namespace Main.Gear.Armor
     abstract class Armor
     {
         //TODO: Think about diffrent container?
+        //maybe think about stick number to each armor type?
         private string _type;
         private int _level;
         private int _durability;
@@ -41,8 +42,6 @@ namespace Main.Gear.Armor
         {
             if(takenDamage >= Durability)
             {
-                //don't have to update durability because this part of armor will be destroyed
-                //anyways
                 return true;
             }
             else
